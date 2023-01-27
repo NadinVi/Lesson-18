@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 42</title>
+	<style>
+
+		.enter {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		p {
+			font-size: 30px;
+		}
+
+
+		#register {
+			width: 300px;
+			height: 50px;
+			border: 1px solid blue;
+			border-radius: 30px;
+			font-size: 16px;
+			text-transform: uppercase;
+			background-color: rgb(163, 163, 237);
+		}
+
+		button {
+			cursor: pointer;
+		}
+
+
+		.modal-container {
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			background-color: rgba(0, 0, 0, 0.501);
+			z-index: 999;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.modal {
+			width: 500px;
+			padding: 20px;
+			background-color: rgb(196, 196, 239);
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			border: 1px solid rgb(162, 162, 238);
+		}
+
+		.modal>input,
+		.modal>button {
+			width: 480px;
+			height: 20px;
+			border: 1px solid rgba(136, 138, 255, 0.171);
+			padding: 10px;
+			font-size: 12px;
+			border-radius: 10px;
+			margin-bottom: 10px;
+		}
+		.modal>button {
+			font-size: 16px;
+		}
+
+		textarea {
+			width: 480px;
+			height: 40px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			padding: 10px;
+			font-size: 12px;
+			border: 1px solid rgba(136, 138, 255, 0.171);
+		}
+
+		.modal>button {
+			background-color: rgb(119, 139, 230);
+			color: white;
+			height: 40px;
+		}
+
+		.select-label {
+			margin-right: 10px;
+			margin-bottom: 10px;
+			font-size: 16px;
+			padding-top: 10px;
+		}
+
+		.gender {
+			display: flex;
+			flex-direction: row;
+		}
+
+		
+		.city {
+			display: flex;
+			flex-direction: row;
+			margin: 10px 0px;
+		}
+		
+		.d-none {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="enter">
+		<p>To enter, please register</p>
+		<button id="register">Register</button>
+	</div>
+	</header>
+	<div class="modal-container d-none">
+		<div class="modal">
+			
+				<span class="select-label">First name</span>
+				<input type="text" placeholder="Ім'я" id="firstName">
+				<span class="select-label">Second name</span>
+				<input type="text" placeholder="Прізвище" id="secondName">
+				<span class="select-label">Date of birth</span>
+				<input type="text" placeholder="Дата народження" id="dateOfBirthd">
+			
+
+			<div class="gender">
+				<span class="gender">Gender :</span>
+				<input type="radio" class="radio" name="radio-group" id="male">
+				<span class="radio-group-text">Male</span>
+				<input type="radio" class="radio" name="radio-group" id="Femaleа">
+				<span class="radio-group-text">Female</span>
+			</div>
+
+			<div class="city">
+				<span class="select-label">City</span>
+				<select class="select">
+					<option value="Kyiv" selected>Kyiv</option>
+					<option value="Odesa">Odesa</option>
+					<option value="Dnepr">Dnepr</option>
+					<option value="Kharkiv">Kharkiv</option>
+				</select>
+			</div>
+			
+
+			
+				<textarea placeholder="Адреса" id="adress"></textarea>
+			
+			<button id="add">Register</button>
+			<button id="close">Сlose</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
