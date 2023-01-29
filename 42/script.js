@@ -16,17 +16,7 @@ const close = document.getElementById("close");
 const containerUs = document.querySelector(".user-container");
 
 
-let users =[
-    {
-    firstName: "First name",
-    secondName: "Second name",
-    dateOfBirthd: "Date of birthd",
-    gender: "Gender",
-    select: "Select",
-    adress: "Adress",
-}
-];
-
+let users =[];
 
 function renderUsers(users) {
     const TRs = [];
@@ -48,13 +38,12 @@ function toggleElement() {
 }
 
 
-
 register.addEventListener("click", () => {
     toggleElement();
     const add = document.getElementById("add");
     add.addEventListener("click", () => {
         createUser();
-        toggleElement(); 
+        toggleElement();
     }) 
 
 })
