@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+.container {
+    background-color: azure;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.slider {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    height: 250px;
+    width: 1500px;
+    display: flex;
+    position: relative;
+}
+
+button {
+    border: 1px solid black;
+    width: 50px;
+    height: 30px;
+    margin: 0 30px;
+}
