@@ -19,9 +19,9 @@
 // </ul>
 
 
-let array = [1, 2, [1, 2, 3, [1, 2], 4], 3, 4, 5];
+let array = [1, 2, [1, 2, 3, [1, 2], 4], 3, 4, [1.1, 1.2, 1.3, 1.4], 5];
 
-const conteiner = document.querySelector(".container");
+const conteiner = document.querySelector(".wrapper");
 
 function generateList(arr) {
     let ul = document.createElement("ul");
