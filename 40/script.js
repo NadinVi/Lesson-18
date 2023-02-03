@@ -18,3 +18,27 @@
 //     <li>3</li>
 // </ul>
 
+
+let array = [1, 2, [1, 2, 3, [1, 2], 4], 3, 4, 5];
+
+const conteiner = document.querySelector(".container");
+
+function generateList(arr) {
+    let ul = document.createElement("ul");
+
+
+    arr.forEach(item => {
+        const li = document.createElement("li");
+        ul.append(li);
+
+        if (Array.isArray(item)) {
+            li.append(generateList(item));
+
+        } else {
+            li.innerText = item;
+        }
+    });
+    return ul;
+}
+
+conteiner.append(generateList(array));
