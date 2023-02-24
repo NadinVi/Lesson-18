@@ -1,0 +1,188 @@
+.modal-container, 
+.modal-container-order {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.501);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal, .modal_order {
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(205, 205, 223);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(81, 81, 99);
+}
+
+
+.modal>input,
+.modal>button {
+    width: 330px;
+    height: 20px;
+    border: 1px solid rgba(136, 138, 255, 0.171);
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.modal>button {
+    font-size: 16px;
+}
+
+textarea {
+    width: 330px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid rgba(136, 138, 255, 0.171);
+}
+
+.modal>button {
+    background-color: rgb(89, 78, 161);
+    color: white;
+    height: 40px;
+}
+
+.select-label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.select {
+    padding: 3px;
+    width: 100px;
+}
+
+.gender {
+    display: flex;
+    flex-direction: row;
+}
+
+.city {
+    margin: 10px 0px;
+}
+
+.pay_item,
+.comments {
+    margin-bottom: 10px;
+}
+
+.payment {
+    padding-left: 50px;
+}
+
+.payment,
+.post,
+.amount {
+    margin-bottom: 10px;
+}
+
+
+.container {
+    display: flex;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 30%;
+}
+
+.categories_item {
+    width: 200px;
+    background-color: rgb(140, 124, 240);
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 2px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.part_product {
+    margin-left: 20px;
+    width: 30%;
+}
+
+.product {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.product_item {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_image {
+    max-width: 33%;
+    max-height: 100px;
+    margin-top: 15px;
+}
+
+.product_title {
+    font-weight: 600;
+}
+
+.info_container {
+    width: 400px;
+    margin-left: 50px;
+    width: 30%;
+}
+
+.info_product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image_product, 
+.order_img {
+    width: 30%;
+}
+
+p {
+    font-size: 12px;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button {
+    width: 100px;
+    cursor: pointer;
+}
+
+h2 {
+    margin: 0;
+}
+.d-none {
+    display: none;
+}
